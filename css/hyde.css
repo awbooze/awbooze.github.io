@@ -30,7 +30,7 @@
  *
  * Update the foundational and global aspects of the page.
  */
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:700i);
 
 html {
@@ -97,6 +97,13 @@ html {
 .sidebar-nav-item {
   display: block;
   line-height: 1.75;
+  font-size: 1.25rem;
+}
+/*Media query to decrease size of font when above 38 em*/
+@media (min-width: 38em) { 
+  .sidebar-nav-item {
+    font-size: 1rem;
+  }
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
@@ -134,12 +141,13 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    4rem;
+  padding-top: 1rem;
   padding-bottom: 4rem;
 }
 
 @media (min-width: 48em) {
   .content {
+    padding-top: 4rem;
     max-width: 42rem;
     margin-left: 20rem;
     margin-right: 2rem;
