@@ -14,21 +14,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Andrew Booze
-author: Andrew Booze
+tagline: 'A personal website'
+author: Andrew Booze 
 description: >- # this means to ignore newlines until "baseurl:"
-  The personal site for Andrew Booze, a computer science major at Kansas State University.
-baseurl: "" # the subpath of your site, e.g. /blog
+  A personal website
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://awbooze.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-header_pages:
-  - about.md
+#header_pages:
+#  - about.md
 github_username:  awbooze
 linkedin_username: andrewbooze
 
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+highlighter: rouge
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
