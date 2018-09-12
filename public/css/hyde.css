@@ -145,12 +145,35 @@ a.sidebar-nav-item:focus {
   padding-bottom: 4rem;
 }
 
+.content h1 {
+  text-align: center;
+}
+
+.action-button-container {
+  text-align: center;
+  padding: 0.6rem 0;
+}
+
+.action-button-container .action-button {
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  background-color: #202020;
+  color: #fff;
+  margin: 0.1rem 0.3rem;
+}
+
 @media (min-width: 48em) {
   .content {
     padding-top: 4rem;
     max-width: 42rem;
     margin-left: 20rem;
     margin-right: 2rem;
+  }
+  .content h1 {
+    text-align: left;
+  }
+  .action-button-container {
+    text-align: left;
   }
 }
 
@@ -258,6 +281,10 @@ a.sidebar-nav-item:focus {
 .theme-base-blue .content a,
 .theme-base-blue .related-posts li a:hover {
   color: #2196F3;
+}
+.theme-base-blue .content .action-button {
+  background-color: #2196F3;
+  color: #fff;
 }
 
 /* Magenta */
