@@ -2,7 +2,7 @@
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1>
-        <a href="{{ site.baseurl }}">
+        <a href="{{ site.url }}">
           {{ site.title }}
         </a>
       </h1>
@@ -25,10 +25,8 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-      <a class="sidebar-nav-item" href="https://github.com/awbooze">GitHub</a>
-      <a class="sidebar-nav-item" href="https://www.linkedin.com/in/andrewbooze">LinkedIn</a>
+      <a class="sidebar-nav-item" href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a class="sidebar-nav-item" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
     </nav>
-
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.author}}. All rights reserved. Hyde theme available on <a href="https://github.com/poole/hyde">GitHub</a> under the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.</p>
   </div>
 </div>

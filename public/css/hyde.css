@@ -10,7 +10,7 @@
  *                \/__/
  *
  * Designed, built, and released under MIT license by @mdo. Learn more at
- * https://github.com/poole/hyde.
+ * https://github.com/poole/hyde. Edits by Andrew Booze.
  */
 
 
@@ -51,8 +51,7 @@ html {
 /*
  * Sidebar
  *
- * Flexible banner for housing site name, intro, and "footer" content. Starts
- * out above content in mobile and later moves to the side with wider viewports.
+ * Flexible banner for housing site name and intro, as well as navigation.
  */
 
 .sidebar {
@@ -60,16 +59,6 @@ html {
   padding: 1rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
-}
-@media (min-width: 48em) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 18rem;
-    text-align: left;
-  }
 }
 
 /* Sidebar links */
@@ -83,25 +72,24 @@ html {
   margin-top: 0;
   font-family: "Meriweather", "Times New Roman", serif;
   font-style: italic;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .sidebar-about .lead {
   font-size: 1rem;
   color: rgba(255,255,255,.7);
+  margin-bottom: .5rem;
 }
 
 /* Sidebar nav */
-.sidebar-nav {
-  margin-bottom: 1rem;
-}
 .sidebar-nav-item {
   display: block;
   line-height: 1.75;
   font-size: 1.25rem;
 }
-/*Media query to decrease size of font when above 38 em*/
 @media (min-width: 38em) { 
   .sidebar-nav-item {
+    display: inline-block;
+    padding: 0 0.625rem;
     font-size: 1rem;
   }
 }
@@ -113,36 +101,28 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 
-/* Sidebar copyright section */
-.sidebar p {
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 1rem;
+  color: rgba(255,255,255,.7);
+  background-color: #202020;
+}
+#footer-content p {
   font-size: .75rem;
 }
-
-/* Sticky sidebar
- *
- * Add the `sidebar-sticky` class to the sidebar's container to affix it the
- * contents to the bottom of the sidebar in tablets and up.
- */
-
-@media (min-width: 48em) {
-  .sidebar-sticky {
-    position: absolute;
-    right:  1rem;
-    bottom: 1rem;
-    left:   1rem;
-  }
+#footer-content p a {
+  color: #fff;
 }
-
 
 /* Container
  *
- * Align the contents of the site above the proper threshold with some margin-fu
- * with a 25%-wide `.sidebar`.
+ * Align and center the contents of the site.
  */
 
 .content {
-  padding-top: 1rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .content h1 {
@@ -164,10 +144,8 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .content {
-    padding-top: 4rem;
-    max-width: 42rem;
-    margin-left: 20rem;
-    margin-right: 2rem;
+    max-width: 44rem;
+    margin: 0 auto;
   }
   .content h1 {
     text-align: left;
@@ -176,40 +154,6 @@ a.sidebar-nav-item:focus {
     text-align: left;
   }
 }
-
-@media (min-width: 64em) {
-  .content {
-    margin-left: 22rem;
-    margin-right: 4rem;
-  }
-}
-
-
-/*
- * Reverse layout
- *
- * Flip the orientation of the page by placing the `.sidebar` on the right.
- */
-
-@media (min-width: 48em) {
-  .layout-reverse .sidebar {
-    left: auto;
-    right: 0;
-  }
-  .layout-reverse .content {
-    margin-left: 2rem;
-    margin-right: 20rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .layout-reverse .content {
-    margin-left: 4rem;
-    margin-right: 22rem;
-  }
-}
-
-
 
 /*
  * Themes
@@ -285,6 +229,9 @@ a.sidebar-nav-item:focus {
 .theme-base-blue .content .action-button {
   background-color: #2196F3;
   color: #fff;
+}
+.theme-base-blue footer {
+  background-color: #2196F3;
 }
 
 /* Magenta */
