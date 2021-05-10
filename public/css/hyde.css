@@ -70,7 +70,7 @@ html {
 /* About section */
 .sidebar-about h1 {
   color: #fff;
-  margin-top: 0;
+  margin: 0;
   font-family: "Gothic A1", "Yu Gothic", Verdana, sans-serif;
   font-weight: 300;
   font-size: 2.5rem;
@@ -144,6 +144,7 @@ footer {
   background-color: #202020;
   color: #fff;
   margin: 0.1rem 0.3rem;
+  display: inline-block;
 }
 
 @media (min-width: 48em) {
@@ -257,9 +258,6 @@ footer {
 }
 
 /* Purple */
-:root {
-  --purple: #512da8;
-}
 .theme-base-purple .sidebar {
   background-color: #512da8;
 }
