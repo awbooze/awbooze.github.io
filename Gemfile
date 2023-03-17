@@ -11,7 +11,7 @@ gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # Pin activesupport manually - otherwise it was sticking to version 3.2.22.5
-  gem "activesupport", "~> 5"
+  gem "activesupport", "~> 6"
   # No other plugins that are not already included in github-pages
 end
 
